@@ -72,7 +72,7 @@ $(document).ready(function () {
     event.preventDefault();
     var inputtedFirstName = $('input#first-name').val();
     var inputtedLastName = $('input#last-name').val();
-    var inputtedInitialDeposit = $('input#initial-deposit').val();
+    var inputtedInitialDeposit = parseInt($('input#initial-deposit').val());
     $('input#first-name').val('');
     $('input#last-name').val('');
     $('input#initial-deposit').val('');
@@ -84,18 +84,19 @@ $(document).ready(function () {
 
   $('form.form-deposit').submit(function (event) {
     event.preventDefault();
-    var newDeposit = $('input#deposit').val();
+    var newDeposit = parseInt($('input#deposit').val());
     var accountNumber = $('input#account-number').val();
     $('input#account-number').val('');
     $('input#deposit').val('');
     accountArr1.findAccount(accountNumber).deposit(newDeposit);
     var newBalance = accountArr1.findAccount(accountNumber).findBalance();
     $('#balance').text('$' + newBalance);
+    $('#history').prepend('<li> Deposit: ' + newDeposit + 'Balance: ' + newBalance + '</li>');
   });
 
   $('form.form-withdrawal').submit(function (event) {
     event.preventDefault();
-    var newWithdrawal = $('input#withdrawal').val();
+    var newWithdrawal = parseInt($('input#withdrawal').val());
     var accountNumber = $('input#account-number2').val();
     console.log(newWithdrawal);
     $('input#account-number2').val('');
@@ -103,6 +104,7 @@ $(document).ready(function () {
     accountArr1.findAccount(accountNumber).withdrawal(newWithdrawal);
     var newBalance = accountArr1.findAccount(accountNumber).findBalance();
     $('#balance').text('$' + newBalance);
+    $('#history').prepend('<li> Withdrawal: ' + newWithdrawal + 'Balance: ' + newBalance + '</li>');
   });
 
 });
