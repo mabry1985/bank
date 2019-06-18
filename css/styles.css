@@ -1,3 +1,7 @@
+body {
+  background-color: rgb(85, 129, 203)
+}
+
 .btn {
   border-style: dashed;
   border-color: black;
@@ -9,3 +13,19 @@
 .btn:hover {
   background-color: rgb(211, 129, 236);
 }
+
+ul {
+  list-style: none;
+}
+
+h1, h3, h4 {
+  text-align: center;
+}
+
+/* .deposit {
+  margin-right: 1px;
+}
+
+.withdrawal {
+  margin-left: 1px;
+} */

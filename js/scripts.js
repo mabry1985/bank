@@ -91,7 +91,7 @@ $(document).ready(function () {
     accountArr1.findAccount(accountNumber).deposit(newDeposit);
     var newBalance = accountArr1.findAccount(accountNumber).findBalance();
     $('#balance').text('$' + newBalance);
-    $('#history').prepend('<li> Deposit: ' + newDeposit + 'Balance: ' + newBalance + '</li>');
+    $('#history').prepend('<li> Deposit: $' + newDeposit + ' Balance: $' + newBalance + '</li>');
   });
 
   $('form.form-withdrawal').submit(function (event) {
@@ -104,7 +104,7 @@ $(document).ready(function () {
     accountArr1.findAccount(accountNumber).withdrawal(newWithdrawal);
     var newBalance = accountArr1.findAccount(accountNumber).findBalance();
     $('#balance').text('$' + newBalance);
-    $('#history').prepend('<li> Withdrawal: ' + newWithdrawal + 'Balance: ' + newBalance + '</li>');
+    $('#history').prepend('<li> Withdrawal: - $' + newWithdrawal + ' Balance: $' + newBalance + '</li>');
   });
 
 });
