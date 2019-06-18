@@ -1,4 +1,4 @@
-# _{Application Name}_
+# _Bank_
 
 #### _{Brief description of application}, {Date of current version}_
 
@@ -24,11 +24,7 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 | Create an object displays current Balance from user input | Name: Daniel, Initial Deposit: $3| Balance : $3|
 | Allow user to add money to account | Deposit: $4 | Balance: $7 |
 | Allow user to remove money | Withdrawal: $7 | Balance: $0 |
-| b4 | i4 | o4 |
-
-
-
-
+| Display history of Withdrawal and Balance | ... | ... |
 
 ## Known Bugs
 
