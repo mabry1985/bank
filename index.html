@@ -18,13 +18,16 @@
       <h3>Register a new account</h3>
       <form class="form-one">
         <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" name="name" value="">
+          <label for="name">First Name</label>
+          <input id = "first-name" type="text" name="name" value="">
+          <label for="name">Last Name</label>
+          <input id = "last-name" type="text" name="name" value="">
           <label for="initial-deposit">Initial Deposit</label>
-          <input type="number" name="initial-deposit" value="">
+          <input id = "initial-deposit" type="number" name="initial-deposit" value="">
         </div>
+        <button type="submit" class="btn" name="button">Create Account</button>
       </form>
-
+<!--
       <h3>Deposit or withdraw money</h3>
       <form class="form-two">
         <div class="form-group">
@@ -33,9 +36,10 @@
           <label for="withdrawal">Withdrawal Amount</label>
           <input type="number" name="withdrawal" value="">
         </div>
-      </form>
+      </form> -->
 
       <h4>Current Balance</h4>
+      <h4 id="balance"></h4>
 
     </div>
   </body>
