@@ -1,5 +1,9 @@
 body {
-  background-color: rgb(85, 129, 203)
+  background-color: rgb(60, 10, 56);
+}
+
+.jumbotron {
+  background-color: rgb(247, 247, 247);
 }
 
 .btn {
@@ -8,6 +12,26 @@ body {
   margin: 2px;
   background-color: purple;
   color: white;
+}
+
+#create-account-button {
+  display: block;
+  margin: auto;
+  margin-left: 159px;
+  margin-bottom: -30px;
+  margin-top: 20px;
+}
+
+#new-account {
+  display: block;
+  max-width: 500px;
+  margin: auto;
+  margin-left: 0px;
+  margin-bottom: 33px;
+}
+
+.form-one {
+  margin-left: 58px;
 }
 
 .btn:hover {
@@ -22,10 +46,16 @@ h1, h3, h4 {
   text-align: center;
 }
 
-/* .deposit {
-  margin-right: 1px;
+h3 {
+  margin-bottom: 10px;
 }
 
-.withdrawal {
-  margin-left: 1px;
-} */
+ #initial-deposit {
+  max-width: 178px;
+  margin-left: 21px
+}
+
+ #last-name {
+   margin-left: 1px;
+
+ }
